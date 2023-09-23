@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:mobile/src/MyScaffold.dart';
 
 void main() {
   runApp(
-    const Center(
-      child: Text(
-        'Hello, world!',
-        textDirection: TextDirection.ltr,
+    const MaterialApp(
+      title: 'My App',
+      home: SafeArea(
+        child: MyScaffold(),
       ),
     ),
   );
