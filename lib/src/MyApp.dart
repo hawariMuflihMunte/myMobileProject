@@ -11,8 +11,30 @@ class MyApp extends StatelessWidget {
         body: SafeArea(
           child: Column(
             children: <Widget>[
+              const Row(
+                children: [
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Image(
+                      image: AssetImage('assets/images/android_logo.png'),
+                      width: 60,
+                      height: 60,
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.topRight,
+                    child: Text(
+                      'Hawari Muflih Munte',
+                      style: TextStyle(
+                        fontSize: 24,
+                        color: Colors.black45
+                      ),
+                    ),
+                  ),
+                ],
+              ),
               Container(
-                height: 398,
+                height: 338,
               ),
               Container(
                 padding: const EdgeInsets.all(2),
