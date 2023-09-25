@@ -23,12 +23,15 @@ class Button extends StatelessWidget {
         child: ClipRRect(
           child: Container(
             color: color,
-            child: Text(
-              buttonText!,
-              style: TextStyle(
-                color: textColor,
-                fontSize: 25,
-                fontWeight: FontWeight.bold,
+            child: Align(
+              alignment: Alignment.center,
+              child: Text(
+                buttonText!,
+                style: TextStyle(
+                  color: textColor,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
             ),
           ),
