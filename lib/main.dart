@@ -3,6 +3,6 @@ import 'package:mobile/src/MyApp.dart';
 
 void main() {
   runApp(
-    const MyApp()
+    MyApp()
   );
 }
